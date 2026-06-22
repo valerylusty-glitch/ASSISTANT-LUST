@@ -1,0 +1,7 @@
+services:
+  yokubo-bot:
+    build: .
+    container_name: yokubo-bot
+    restart: unless-stopped
+    env_file:
+      - .env
